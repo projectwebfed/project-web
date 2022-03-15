@@ -68,6 +68,7 @@ li {
   background-image: url("https://cdn.pixabay.com/photo/2019/06/15/16/06/online-4275963_960_720.jpg");
   background-color: #cccccc;
   height: 600px;
+  width: 120%;
   background-size: cover;
   margin-top:65px;
 
