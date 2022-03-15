@@ -1,5 +1,6 @@
 body {
 	font-family: sans-serif;
+	margin: 0;
 
 }
 
@@ -17,11 +18,12 @@ li {
 
 
 .header {
-  height: 65px;
+  height: 75px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
   position: fixed;
-  top: 0;
+ 	top: 0;
+ 	overflow: hidden;
   z-index: 10;
 
 }
@@ -43,17 +45,29 @@ li {
 
 
 .header-list a:hover {
-	background-color: blue;
+	background: #ddd;
+  color: black;
+  width: 100%;
 }
 
 .header-list {
 	float: right;
 	margin-top: -60px;
+	margin-right: 45px;
+
 }
 
 .header-list a {
-	color: white;
-	text-decoration: none;
+	float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: -14px;
+  	margin-right: -30px;
+
 }
 
 .header-list li {
@@ -67,11 +81,11 @@ li {
 .main {
   background-image: url("https://cdn.pixabay.com/photo/2019/06/15/16/06/online-4275963_960_720.jpg");
   background-color: #cccccc;
-  	height: 475px;
-  width: 120%;
+  height: 480px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:65px;
+  margin-top:75px;
 
 }
 
@@ -144,9 +158,108 @@ li {
 	text-align: center;
 }
 
-.content-title hr{
+
+
+/* CONTENT */
+
+.heading {
+	margin-top: 20px;
+}
+
+.heading h2{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+.heading hr{
 	width: 300px;
 	background-color: #000000;
 	border-width: 2px;
 	border-top: 3px solid ;
+}
+
+.stuffs {
+width: 1170px;
+padding: 0 15px;
+margin: 0 auto;
+margin-top: 70px;
+margin-left: 100px;
+padding-bottom: 500px;
+
+
+
+}
+
+a {
+text-decoration: none;
+}
+
+.stuff {
+    float: left;
+    width: 25%;
+    padding-bottom: 70px;
+    position: static;
+
+
+}
+
+.stuff-icon {
+    position: relative;
+  
+  }
+
+.stuff-icon img {
+   width: 250px;
+   height: 200px;
+   margin-top: -40px;
+  
+  }
+
+
+.checked {
+    color: orange;
+  }
+
+.icon-wrapper {
+    margin: 20px 0;
+  }
+
+.icon-wrapper a{
+    color: white;
+}
+
+.icon{
+    border-radius: 4px;
+}
+
+.detail {
+    background-color: #432eff;
+    margin-right: 10px;
+    padding: 8px 10px;
+    box-shadow: 0 3px #221b80
+  }
+
+.keranjang {
+    background-color: red;
+    padding: 8px 10px;
+    cursor: pointer;
+    box-shadow: 0 3px #5f0505
+}
+.icon:active {
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+  }
+.fa-solid {
+    margin-left: 5px;
+}
+
+/* FOOTER */
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: DarkSalmon;
+	padding: 3px;
 }
